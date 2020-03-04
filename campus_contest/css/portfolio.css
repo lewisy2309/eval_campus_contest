@@ -1,0 +1,402 @@
+/*****************************************************/
+/**********MODIFICATION POUR TOUT LE SITE************/
+/***************************************************/
+*{box-sizing: border-box;
+padding: 0;
+font-family: "Trebuchet MS", Verdana, Geneva, Arial;
+background-color :#f5fffa;
+color: #597788
+}
+
+.division{display: flex;
+padding: 30px 100px}
+
+
+a{text-decoration: none;
+color: #597788;}
+a:hover{color:#e34d26;
+transition:all 0.8s linear;
+transform: scale(1.3,1.3)}
+
+h2{position: relative;
+text-transform: uppercase;
+padding-bottom:50px;
+color: #025d9b}
+h2::after{position:absolute;
+content:"";
+padding:0;
+background-color: #e34d26;
+margin:0;
+border:1px solid #e34d26;
+left:calc(50% - 40px);
+width:80px;
+top:35px;
+}
+body{position: relative}
+/*****************************************************/
+/********MODIFICATION POUR LE MENU DE NAVIGATION*****/
+/***************************************************/
+nav{position: absolute;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+text-transform: uppercase;
+color: red;
+font-weight: bolder;
+padding:15px 0;
+position: fixed;
+width:100%;
+z-index: 7;
+margin: 0;
+top:-5px;
+box-shadow:0px 2px 5px black
+}
+
+/*****************************************************/
+/**********MODIFICATION POUR A PROPOS************/
+/***************************************************/
+#apropos{flex-direction: column;
+align-items: center;
+position: relative}
+
+#apropos>div{display: flex;
+flex-direction: row;
+padding-top: 20px;
+background-color: }
+
+#apropos>div>img{width: 500px; }
+#apropos>div>div{display: flex;
+flex-direction: column;
+margin-left: 40px;
+text-align: center
+}
+#apropos>div>div>h1{display: flex;
+flex-direction:column;
+color:#025d9b;
+font-weight: bolder
+}
+
+#apropos>div>div>h1>span{font-size: 20px;
+text-transform: capitalize;
+    color: #e34d26
+}
+#apropos>div>div>p{text-align: left}
+
+#apropos:after{position: absolute;
+content:"";
+padding:10px;
+background-color: #025d9b;
+margin:0;
+border:1px solid #025d9b;
+left:0;
+width:20%;
+top:510px;
+}
+
+#apropos:hover::after{position: absolute;
+content:"";
+padding:10px;
+background-color: #025d9b;
+margin:0;
+border:1px solid #025d9b;
+left:0;
+width:20%;
+top:510px;;
+transition:all 2.6s linear;
+transform: scale(5,1)}
+
+#apropos:hover::after {position: absolute;
+content:"";
+padding:10px;
+background-color: #e34d26;
+margin:0;
+border:1px solid #e34d26;
+left:0;
+width:20%;
+top:520px;;
+transition:all 2.6s linear;
+transform: scale(8.3,0.5)}
+
+/*****************************************************/
+/*********MODIFICATION POUR LA PARTIE FORMATION******/
+/***************************************************/
+#formations{flex-direction: column;;
+padding: 100px;
+background-color: #f0f0f0;
+}
+#formations>h2{align-self: center;
+margin:50px 0 100px 0;
+background-color: transparent}
+
+#formations>div{display: flex;
+flex-direction: row;
+justify-content: space-around;
+background-color: transparent;
+}
+
+#formations>div>section{display: flex;
+flex-direction: column;
+width: 450px;
+align-items: center;
+position: relative;
+background-color: lightgray;
+border-radius: 7%}
+
+#formations>div>section:hover{transform: scale(1.5,1.5);
+transition: all 1s linear}
+
+#formations>div>section:hover p:first-child{transform: rotate(360deg);
+transition: all 1s linear}
+
+#formations>div>section>p:first-child{display: flex;
+justify-content: center;
+align-items: center;
+background-color: #025d9b;
+width: 80px;
+height:80px;
+border-radius: 50%;
+color:white;
+position: absolute;
+top:-60px;
+}
+
+#formations>div>section>h4{text-transform: uppercase;
+font-weight: bolder;
+background-color: transparent;
+padding-top: 20px;
+color: #e34d26}
+
+#formations>div>section>p:nth-child(3){background-color: transparent;}
+
+#formations>div>section>p:nth-child(4){display: flex;
+align-items: center;
+width: 350px;
+background-color: transparent}
+    
+/*****************************************************/
+/****MODIFICATION POUR TOUT LA PARTIE COMPETENCES****/
+/***************************************************/
+#competences{flex-direction: column;
+align-items: center}
+
+#competences div{display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around; }
+
+#competences>div>section{display: flex;
+flex-direction: column;
+align-items: center;
+padding: 30px}
+
+#competences>div>section>h4{font-size: 20px;
+text-transform: uppercase;
+color: #025d9b}
+
+#competences>div>section>p{text-transform: uppercase;
+opacity: 0}
+
+#competences>div>section:hover p{opacity: 1;
+transition: all 1s ease;
+transform: scale(1.5,1.5)} 
+
+#competences img{width: 340px;
+height: 150px}
+
+/*****************************************************/
+/******µMODIFICATION POUR LA DIVISION PORTFOLIO******/
+/***************************************************/
+
+#portfolio{flex-direction: column;
+align-items: center;
+background-color: #f0f0f0}
+#portfolio>h2{margin-bottom: 50px;
+background-color: #f0f0f0}
+#portfolio>section{display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #025d9b;
+border-radius: 10%;
+margin-bottom: 40px;
+margin: 0 20px 40px 0;
+width: 1200px;
+
+}
+
+
+#portfolio>section>h4{text-transform: uppercase;
+font-size: 40px;
+background-color: #025d95;
+color:#e34d26;
+margin-bottom: 0;
+background-color: transparent}
+
+#portfolio>section>p{opacity:0;
+color:#e34d26;
+background-color:#025d95;
+background-color: transparent;
+width: 800px}
+
+
+#portfolio>section:hover p{opacity: 1;
+font-size:30px;
+transition: all 1.5s ease;
+color: #e34d26
+}
+
+#portfolio>section:hover h4{font-size: 20px;
+transition: all 1.5s ease;
+color: #e34d26}
+
+#portfolio>section:hover{background-image: url(../img/meeting-2284501_1920.jpg);
+background-size: cover;
+background-position: center
+    ;
+transition:all 1s ease}
+
+#portfolio>section:nth-child(3):hover{background-image:url(../img/computer-767781_1920.jpg)}
+
+/*****************************************************/
+/**********MODIFICATION POUR "ME CONTACTER"**********/
+/***************************************************/
+#mecontacter{flex-direction: column}
+
+#mecontacter>h2{display: flex;
+justify-content:center;
+margin-bottom: 40px}
+
+#mecontacter>div{display: flex;
+flex-direction:row;
+justify-content: space-around;
+flex-wrap: wrap}
+
+#mecontacter img{width:30px;
+height:40px;
+padding-right: 10px}
+
+#mecontacter>div>div>section{display: flex;
+padding: 15px 0}
+
+#mecontacter>form{display: flex;
+margin: 20px
+}
+#mecontacter>div>form>input{margin-top:10px;
+width: 400px;
+height: 30px;
+border-radius: 7px}
+
+#mecontacter textarea{margin-top: 10px;
+width: 400px;
+height:150px;
+border-radius: 7px;
+}
+#accord{width: 20px;
+height: 20px;
+margin-top:16px;
+padding: 0;
+}
+#mecontacter>div>form>div{display: flex;
+flex-direction: row;
+text-align: left;
+width: 400px}
+
+#mecontacter>div>form>div>p>a{color:#e34d26}
+/***********************************************/
+/*******MODIFICATION POUR LE PIED DE PAGE******/
+/*********************************************/
+footer{display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+background-color:#025d95;
+text-transform: uppercase;
+color:white;
+justify-content: space-between;
+align-content: center;
+padding:10px 5px
+}
+
+footer span{color: #ed145b;
+text-align: right;
+background-color: transparent;
+color:#e34d26 }
+
+footer>p{color:white;
+background-color: transparent;
+}
+
+
+/***********************************************/
+/***************RESPONSIVE DESIGN**************/
+/*********************************************/
+
+
+@media all and (max-width:500px){
+    nav{flex-direction: column;
+    width: inherit;
+   }
+    h2:after{display: none;
+    padding: 0;
+    margin: 0}
+    #apropos{padding: 0;align-items: center}
+    #apropos:after{display: none}
+    #apropos>h2{position: relative;
+    left: 50px;
+    margin: 0;
+    padding:15px}
+    #apropos>div{flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0
+    }
+    #apropos>div>img{width: 110px;
+    height: 150px;
+    margin: 70px 0 0 0;
+    margin: 0}
+    
+#apropos>div>div{padding: 0;
+margin: 0}
+    
+    
+    
+    
+   
+    #formations>div{flex-wrap: wrap}
+    #formations>h2{padding: 0}
+#formations>div>section{width: 250px;
+margin: 30px 0}
+#formations>div>section>p:nth-child(4){width: 250px}
+#competences{justify-content: center;
+padding:0 0 70px 0}    
+#competences>div>section{width: 100px;
+margin: 0 1px;
+height: 250px;
+justify-content: space-between}
+#competences img{width: 60px;
+height: 100px}
+
+#portfolio>section{width: 300px;
+text-align: center}
+#portfolio>section>p{width: 270px}
+#mecontacter form{text-align: center}
+#mecontacter input{width:300px;
+text-align: center}
+#mecontacter textarea{width:300px;
+text-align: center}
+}
+
+@media all and (max-width:1025px){
+    nav{text-align: center;
+    width: 95%}
+    #apropos:after{display: none}
+    
+    
+    #portfolio>section{width: 600px;
+text-align: center}
+    #portfolio>section>p{width: 550px}
+    #formations>div>section{width: 300px;
+    margin: 0 20px}
+    #formations>div>section>p:nth-child(4){width: 250px}
+}
+
+
+.modification{}
